@@ -1,0 +1,151 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.25.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 11 11, 11, LIC=VGX8T-RAP2N-Y78RW-QPU1G-Y7SGM-5LR9N
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.25.2.0
+Toolchain Path:  G:\keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.25.2.0
+Dialog DLL:      DCM.DLL V1.17.1.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
+Dialog DLL:      TCM.DLL V1.35.1.0
+ 
+<h2>Project:</h2>
+E:\hsiaohuchu\潘多拉开发板课程设计\OV7725andWIFIiandRFID\USER\ATK_LCD.uvprojx
+Project File Date:  06/28/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'G:\keil5\ARM\ARMCC\Bin'
+Rebuild target 'ATK_LCD'
+assembling startup_stm32l475xx.s...
+compiling stm32l4xx_hal.c...
+compiling stm32l4xx_it.c...
+compiling main.c...
+..\ESP8266\wifiap.h(13): warning:  #1295-D: Deprecated declaration lianjie - give arg types
+  void lianjie();
+..\ESP8266\wifiap.h(16): warning:  #1295-D: Deprecated declaration jieshou - give arg types
+  void jieshou();
+main.c(68): warning:  #177-D: variable "count"  was declared but never referenced
+  	int count=0;
+main.c(69): warning:  #177-D: variable "k"  was declared but never referenced
+  	int k;
+main.c(70): warning:  #550-D: variable "cmd"  was set but never used
+  	char *cmd;
+main.c(228): warning:  #111-D: statement is unreachable
+  					delay_ms(5);
+main.c: 6 warnings, 0 errors
+compiling stm32l4xx_hal_gpio.c...
+compiling stm32l4xx_hal_cortex.c...
+compiling stm32l4xx_hal_pwr.c...
+compiling system_stm32l4xx.c...
+compiling stm32l4xx_hal_rcc.c...
+compiling stm32l4xx_hal_usart_ex.c...
+compiling stm32l4xx_hal_uart_ex.c...
+compiling stm32l4xx_hal_usart.c...
+compiling stm32l4xx_hal_pwr_ex.c...
+compiling stm32l4xx_hal_uart.c...
+compiling stm32l4xx_hal_rcc_ex.c...
+compiling stm32l4xx_hal_dma.c...
+compiling sys.c...
+compiling stm32l4xx_hal_dma_ex.c...
+compiling stm32l4xx_hal_tim_ex.c...
+compiling stm32l4xx_hal_spi.c...
+compiling usart.c...
+compiling delay.c...
+compiling stm32l4xx_hal_tim.c...
+compiling lcd.c...
+compiling led.c...
+compiling spi3.c...
+compiling sccb.c...
+compiling ov7725.c...
+compiling exti.c...
+compiling key.c...
+compiling wifiap.c...
+compiling malloc.c...
+compiling myiic.c...
+compiling aht10.c...
+compiling beep.c...
+compiling timer.c...
+compiling RC522.c...
+..\HARDWARE\RC522\RC522.c(809): warning:  #223-D: function "memcpy" declared implicitly
+  			memcpy(ucComMF522Buf, pData, 16);
+..\HARDWARE\RC522\RC522.c(936): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *"
+    LCD_ShowString(60,170,150,16,16,data); 
+..\HARDWARE\RC522\RC522.c: 2 warnings, 0 errors
+compiling wifista.c...
+..\ESP8266\wifiap.h(13): warning:  #1295-D: Deprecated declaration lianjie - give arg types
+  void lianjie();
+..\ESP8266\wifiap.h(16): warning:  #1295-D: Deprecated declaration jieshou - give arg types
+  void jieshou();
+..\ESP8266\wifista.c(90): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *"
+  	LCD_ShowString(0, 105, 240, 16, 16, cmd);
+..\ESP8266\wifista.c(105): warning:  #111-D: statement is unreachable
+  					USART_RX_STA=0;
+..\ESP8266\wifista.c(84): warning:  #177-D: variable "i"  was declared but never referenced
+  	int i;
+..\ESP8266\wifista.c(114): warning:  #177-D: variable "i"  was declared but never referenced
+  	int i=0;
+..\ESP8266\wifista.c(115): warning:  #177-D: variable "x"  was declared but never referenced
+  	u16 x=data;
+..\ESP8266\wifista.c(165): warning:  #177-D: variable "ATK_ESP8266_WORKMODE_TBL"  was declared but never referenced
+  	const u8 *ATK_ESP8266_WORKMODE_TBL[3]={"TCP服务器","TCP客户端"," UDP 模式"};	//ATK-ESP8266,4种工作模式
+..\ESP8266\wifista.c(168): warning:  #177-D: variable "t"  was declared but never referenced
+  	int t=1;
+..\ESP8266\wifista.c(169): warning:  #550-D: variable "p"  was set but never used
+  	u8 *p;
+..\ESP8266\wifista.c(233): warning:  #550-D: variable "p"  was set but never used
+  	u8 *p;
+..\ESP8266\wifista.c(235): warning:  #177-D: variable "rlen"  was declared but never referenced
+  	int rlen;
+..\ESP8266\wifista.c(238): warning:  #177-D: variable "len"  was declared but never referenced
+  	int len;
+..\ESP8266\wifista.c(309): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *"
+  	LCD_ShowString(0, 0, 200, 16, 16, &p[9]);
+..\ESP8266\wifista.c(326): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *"
+  		LCD_ShowString(0,120, 240, 16, 16, cmd);
+..\ESP8266\wifista.c(330): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *"
+  			LCD_ShowString(30, 125, 200, 16, 16, ipbuf);
+..\ESP8266\wifista.c(331): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *"
+  			LCD_ShowString(0, 145, 200, 16, 16, &p[10]);
+..\ESP8266\wifista.c(352): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *"
+  					senddata(p);
+..\ESP8266\wifista.c(366): warning:  #111-D: statement is unreachable
+  	myfree(SRAMIN,p);		//释放内存 
+..\ESP8266\wifista.c(292): warning:  #177-D: variable "timex"  was declared but never referenced
+  	u8 timex=0; 
+..\ESP8266\wifista.c(295): warning:  #550-D: variable "t"  was set but never used
+  	u16 t=999;		//加速第一次获取链接状态
+..\ESP8266\wifista.c(306): warning:  #177-D: variable "i"  was declared but never referenced
+  	int i=0;
+..\ESP8266\wifista.c: 22 warnings, 0 errors
+linking...
+Program Size: Code=20776 RO-data=59392 RW-data=72 ZI-data=106120  
+FromELF: creating hex file...
+"..\OBJ\ATK_LCD.axf" - 0 Error(s), 30 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32L4xx_DFP.2.0.0.pack
+                Keil.STM32L4xx_DFP.2.0.0
+                STMicroelectronics STM32L4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_ATK_LCD
+  G:\keil5\ARM\PACK\Keil\STM32L4xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:43
+</pre>
+</body>
+</html>
